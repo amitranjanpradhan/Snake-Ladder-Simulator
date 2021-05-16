@@ -29,18 +29,19 @@ public class Snakeladder {
 							position -= randomCheck;
 							break;
 						}
-			            if (position == 100) {
-			                break;
-			            } else if (position > 100) {
-			                position -= randomCheck;
-			                System.out.println("Not valid Dice Face. You are staying on same position.");
-			            } else if (position < 0) {
-			                position = source; // Starting from zero again.
-			                System.out.println("You came back to start.");
-			            } else {
-			                System.out.println("New Position: " + position);
-			            }
-				  }
-				System.out.println("You won");
-			  }
-		  }
+						
+						if (position == 100) {
+				                break;
+				            } else if (position > 100) {
+				                position -= randomCheck;
+				                System.out.println("Not valid Dice Face. You are staying on same position.");
+				            } else if (position < 0) {
+				                position = source; // Starting from zero again.
+				                System.out.println("You came back to start.");
+				            } else {
+				                System.out.println("New Position: " + position);
+				            }
+					}
+					System.out.println("You Won... and your position is : "+position);
+			}
+	}
